@@ -12,7 +12,7 @@ class Anagram
     candidates.each{|candidate|
       #sort letters of candidate word
       cand_letters = candidate.chars.sort
-      matches << candidate if candidate_letters == original_letters
+      matches << candidate if cand_letters == original_letters
     }
 
     matches
