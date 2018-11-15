@@ -46,3 +46,4 @@ def manual_attempt
       index += 1
     end
   end
+end
