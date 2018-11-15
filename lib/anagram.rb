@@ -7,9 +7,12 @@ class Anagram
 
   def match (candidates)
     matches = []
-    
+    #sort letters of original word
+    original_letters = @word.chars.sort
     candidates.each{|candidate|
-      
+      #sort letters of candidate word
+      cand_letters = candidate.chars.sort
+      matches << candidate if candidate_letters == original_letters
     }
 
     matches
@@ -43,4 +46,3 @@ def manual_attempt
       index += 1
     end
   end
-  
